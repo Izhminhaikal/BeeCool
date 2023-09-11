@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Beecool</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" type="text/css" href="C:\Users\user\Downloads\beecool\styles.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.bc-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.bc-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="bc-sidebar bc-denim bc-collapse bc-top bc-large bc-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="bc_close()" class="bc-button bc-hide-large bc-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="bc-container">
+    <h3 class="bc-padding-64 bc-text-white"><b>BEECOOL</b></h3>
+  </div>
+  <div class="bc-bar-block">
+    <a href="#" class="bc-bar-item bc-button bc-hover-white">Home</a> 
+    <a href="#products" class="bc-bar-item bc-button bc-hover-white">Products</a> 
+    <a href="#services" class="bc-bar-item bc-button bc-hover-white">Services</a> 
+    <a href="#technicians" class="bc-bar-item bc-button bc-hover-white">Technicians</a> 
+    <a href="#packages" class="bc-bar-item bc-button bc-hover-white">Packages</a> 
+    <a href="#branches" class="bc-bar-item bc-button bc-hover-white">Branches</a>
+    <a href="#contact" class="bc-bar-item bc-button bc-hover-white">Contact</a>
+  </div>
+</nav>
+
+
+<!-- Top menu on small screens -->
+<header class="bc-container bc-top bc-hide-large bc-denim bc-xlarge bc-padding">
+  <a href="javascript:void(0)" class="bc-button bc-black bc-margin-right" onclick="bc_open()">☰</a>
+  <span class="bc-text-white"> BEECOOL</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="bc-overlay bc-hide-large" onclick="bc_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="bc-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="bc-container" style="margin-top:80px" id="products">
+    <h1 class="bc-jumbo"><b>Welcome to BeeCool Car Tint</b></h1>
+    <h1 class="bc-xlarge bc-text-denim"><b>Your Ultimate Destination for Elite Automotive Tinting Solutions!</b></h1>
+    <hr style="color: black; background-color: black; height: 2px;">
+    <h1 class="bc-xxxlarge bc-text-denim"><b>Products.</b></h1>
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="bc-row-padding">
+    <div class="bc-half">
+      <img src="C:\Users\user\Downloads\beecool\bcimages\car1.jpg" style="width:100%" onclick="bc_onClick(this)" alt="Grade A">
+      <img src="C:\Users\user\Downloads\beecool\bcimages\car2.jpg" style="width:100%" onclick="bc_onClick(this)" alt="Grade B">
+      <img src="C:\Users\user\Downloads\beecool\bcimages\car3.jpg" style="width:100%" onclick="bc_onClick(this)" alt="Grade C">
+    </div>
+
+    <div class="bc-half">
+      <img src="C:\Users\user\Downloads\beecool\bcimages\car4.jpg" style="width:100%" onclick="bc_onClick(this)" alt="Grade D">
+      <img src="C:\Users\user\Downloads\beecool\bcimages\car5.jpg" style="width:100%" onclick="bc_onClick(this)" alt="Grade E">
+      <img src="C:\Users\user\Downloads\beecool\bcimages\car6.jpg" style="width:100%" onclick="bc_onClick(this)" alt="Grade F">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="bc-modal bc-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="bc-button bc-black bc-xxlarge bc-display-topright">×</span>
+    <div class="bc-modal-content bc-animate-zoom bc-center bc-transparent bc-padding-64">
+      <img id="img01" class="bc-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="bc-container" id="services" style="margin-top:75px">
+    <h1 class="bc-xxxlarge bc-text-denim"><b>Services.</b></h1>
+    <p>At BeeCool, we specialize in transforming ordinary cars into extraordinary driving experiences!</p>
+    <p>Upgrade your driving experience with BeeCool Car Tint – where innovation meets automotive elegance. Let our tinting experts transform your vehicle into a beacon of style, protection, and comfort. Contact us today for a consultation and experience the BeeCool difference firsthand. With a passion for innovation and a commitment to excellence, we bring you cutting-edge car tinting services that combine style, protection, and comfort. 
+    </p>
+  </div>
+  
+  <!-- Technicians -->
+  <div class="bc-container" id="technicians" style="margin-top:75px">
+    <h1 class="bc-xxxlarge bc-text-denim"><b>Technicians.</b></h1>
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="bc-row-padding bc-grayscale">
+    <div class="bc-col m4 bc-margin-bottom">
+      <div class="bc-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="bc-container">
+          <h3>John Doe</h3>
+          <p class="bc-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bc-col m4 bc-margin-bottom">
+      <div class="bc-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="bc-container">
+          <h3>Jane Doe</h3>
+          <p class="bc-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bc-col m4 bc-margin-bottom">
+      <div class="bc-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="bc-container">
+          <h3>Mike Ross</h3>
+          <p class="bc-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="bc-container" id="packages" style="margin-top:75px">
+    <h1 class="bc-xxxlarge bc-text-denim"><b>Packages.</b></h1>
+    <p>Some text about our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  <div class="bc-row-padding">
+    <div class="bc-half bc-margin-bottom">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-dark-grey bc-xlarge bc-padding-32">Basic</li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">10 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">20% furniture discount</li>
+        <li class="bc-padding-16">Good deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 199</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="bc-half">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-dark-grey bc-xlarge bc-padding-32">Pro</li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">50 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">50% furniture discount</li>
+        <li class="bc-padding-16">GREAT deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 249</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Branches -->
+  <div class="bc-container" id="branches" style="margin-top:75px">
+    <h1 class="bc-xxxlarge bc-text-denim"><b>Branches.</b></h1>
+    <p>Some text about our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  <div class="bc-row-padding">
+    <div class="bc-half bc-margin-bottom">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-light-blue bc-xlarge bc-padding-32">Simpang (HQ)</li>
+	<li class="bc-padding-16"><img src="C:\Users\izhmin\Desktop\beecool\bcimages\black.jpg" alt="Black width="250" height="200""> </li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">10 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">20% furniture discount</li>
+        <li class="bc-padding-16">Good deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 199</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+        <li class="bc-light-grey bc-padding-24">
+          <button class="bc-button bc-white bc-padding-large bc-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="bc-half">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-light-blue bc-xlarge bc-padding-32">Kamunting</li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">50 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">50% furniture discount</li>
+        <li class="bc-padding-16">GREAT deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 249</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+        <li class="bc-light-grey bc-padding-24">
+          <button class="bc-button bc-white bc-padding-large bc-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bc-row-padding">
+    <div class="bc-half bc-margin-bottom">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-light-blue bc-xlarge bc-padding-32">Kuala Kangsar</li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">10 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">20% furniture discount</li>
+        <li class="bc-padding-16">Good deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 199</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+        <li class="bc-light-grey bc-padding-24">
+          <button class="bc-button bc-white bc-padding-large bc-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="bc-half">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-light-blue bc-xlarge bc-padding-32">Parit Buntar</li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">50 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">50% furniture discount</li>
+        <li class="bc-padding-16">GREAT deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 249</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+        <li class="bc-light-grey bc-padding-24">
+          <button class="bc-button bc-white bc-padding-large bc-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bc-row-padding">
+    <div class="bc-half bc-margin-bottom">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-light-blue bc-xlarge bc-padding-32">Manjung</li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">10 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">20% furniture discount</li>
+        <li class="bc-padding-16">Good deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 199</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+        <li class="bc-light-grey bc-padding-24">
+          <button class="bc-button bc-white bc-padding-large bc-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="bc-half">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-light-blue bc-xlarge bc-padding-32">Ipoh</li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">50 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">50% furniture discount</li>
+        <li class="bc-padding-16">GREAT deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 249</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+        <li class="bc-light-grey bc-padding-24">
+          <button class="bc-button bc-white bc-padding-large bc-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="bc-row-padding">
+    <div class="bc-half bc-margin-bottom">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-light-blue bc-xlarge bc-padding-32">Sungai Petani</li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">10 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">20% furniture discount</li>
+        <li class="bc-padding-16">Good deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 199</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+        <li class="bc-light-grey bc-padding-24">
+          <button class="bc-button bc-white bc-padding-large bc-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="bc-half">
+      <ul class="bc-ul bc-light-grey bc-center">
+        <li class="bc-light-blue bc-xlarge bc-padding-32">Selangor (Coming Soon)</li>
+        <li class="bc-padding-16">Floorplanning</li>
+        <li class="bc-padding-16">50 hours support</li>
+        <li class="bc-padding-16">Photography</li>
+        <li class="bc-padding-16">50% furniture discount</li>
+        <li class="bc-padding-16">GREAT deals</li>
+        <li class="bc-padding-16">
+          <h2>$ 249</h2>
+          <span class="bc-opacity">per room</span>
+        </li>
+        <li class="bc-light-grey bc-padding-24">
+          <button class="bc-button bc-white bc-padding-large bc-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="bc-container" id="contact" style="margin-top:75px">
+    <h1 class="bc-xxxlarge bc-text-denim"><b>Contact.</b></h1>
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="bc-section">
+        <label>Name</label>
+        <input class="bc-input bc-border" type="text" name="Name" required>
+      </div>
+      <div class="bc-section">
+        <label>Email</label>
+        <input class="bc-input bc-border" type="text" name="Email" required>
+      </div>
+      <div class="bc-section">
+        <label>Message</label>
+        <input class="bc-input bc-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="bc-button bc-block bc-light-blue bc-section bc-hover-black">Send</button>
+    </form>
+  </div>
+  
+  <!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="bc-container bc-padding-64 bc-light-grey bc-opacity bc-xlarge">
+  <i class="bc-social bc-hover-opacity bc-xxxlarge bc-facebook-official bc-margin-right"></i>
+  <i class="bc-social bc-hover-opacity bc-xxxlarge bc-instagram bc-margin-right"></i>
+  <i class="bc-social bc-hover-opacity bc-xxxlarge bc-snapchat bc-margin-right"></i>
+  <i class="bc-social bc-hover-opacity bc-xxxlarge bc-pinterest-p bc-margin-right"></i>
+  <i class="bc-social bc-hover-opacity bc-xxxlarge bc-twitter bc-margin-right"></i>
+  <i class="bc-social bc-hover-opacity bc-xxxlarge bc-linkedin bc-margin-right"></i>
+  <p class="bc-medium">Powered by <a href="https://www.beecool.com" target="_blank" class="bc-hover-opacity">beecool.com</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function bc_onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Close the sidebar
+function bc_close() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Open the sidebar
+function bc_open() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById("myOverlay").style.display = "block";
+}
+</script>
+
+</body>
+</html>
